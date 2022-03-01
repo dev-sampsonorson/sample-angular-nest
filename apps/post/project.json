@@ -85,6 +85,16 @@
         "jestConfig": "apps/post/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "serve-with-api": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": true,
+        "commands": [
+          "nx serve api",
+          "nx serve post"
+        ]
+      }
     }
   },
   "tags": []
