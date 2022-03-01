@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "post": "apps/post",
+    "post-e2e": "apps/post-e2e"
+  }
+}
