@@ -30,15 +30,16 @@ function configureSwagger(appConfig: AppConfiguration, app: INestApplication, gl
 }
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  const appConfig = app.get<AppConfiguration>(appConfiguration.KEY);
-  const globalPrefix = 'api';
+    const app = await NestFactory.create(AppModule);
+    const appConfig = app.get<AppConfiguration>(appConfiguration.KEY);
+    const globalPrefix = 'api';
     app.setGlobalPrefix(globalPrefix);
+    app.enableCors();
     configureSwagger(appConfig, app, globalPrefix);
-  await app.listen(appConfig.port);
-  Logger.log(
-    `🚀 Listening on: ${appConfig.domain}/${globalPrefix}`
-  );
+    await app.listen(appConfig.port);
+    Logger.log(
+        `🚀 Listening on: ${appConfig.domain}/${globalPrefix}`
+    );
 }
 
 bootstrap();
