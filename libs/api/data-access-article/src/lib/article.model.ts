@@ -10,6 +10,8 @@ import { Document } from 'mongoose';
  * Normally, you will have an ArticleDto and a transformation layer in
  * between. Which will be responsible for transforming your Article (model/schema)
  * to ArticleDto.
+ *
+ * https://github.com/nartc/mapper
  */
 @Schema({
     timestamps: true
