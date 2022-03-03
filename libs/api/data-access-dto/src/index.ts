@@ -1,1 +1,1 @@
-export * from './lib/api-data-access-dto.module';
+export * from './lib/article/create-article.dto';
