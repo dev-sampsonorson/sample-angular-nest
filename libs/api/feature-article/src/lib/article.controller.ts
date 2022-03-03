@@ -1,7 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { ArticleService } from '@sample-angular-nest/api/data-access-article';
 
-
 @Controller('articles')
 export class ArticleController {
 
