@@ -29,6 +29,9 @@
             ],
             "@sample-angular-nest/api/utils-config": [
                 "libs/api/utils-config/src/index.ts"
+            ],
+            "@sample-angular-nest/article/data-access-api": [
+                "libs/article/data-access-api/src/index.ts"
             ]
         }
     },

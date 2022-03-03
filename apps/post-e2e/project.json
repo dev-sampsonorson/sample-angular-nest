@@ -1,28 +1,28 @@
 {
-  "root": "apps/post-e2e",
-  "sourceRoot": "apps/post-e2e/src",
-  "projectType": "application",
-  "targets": {
-    "e2e": {
-      "executor": "@nrwl/cypress:cypress",
-      "options": {
-        "cypressConfig": "apps/post-e2e/cypress.json",
-        "devServerTarget": "post:serve:development"
-      },
-      "configurations": {
-        "production": {
-          "devServerTarget": "post:serve:production"
+    "root": "apps/post-e2e",
+    "sourceRoot": "apps/post-e2e/src",
+    "projectType": "application",
+    "targets": {
+        "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+                "cypressConfig": "apps/post-e2e/cypress.json",
+                "devServerTarget": "post:serve:development"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "post:serve:production"
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/post-e2e/**/*.{js,ts}"]
+            }
         }
-      }
     },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/post-e2e/**/*.{js,ts}"]
-      }
-    }
-  },
-  "tags": [],
-  "implicitDependencies": ["post"]
+    "tags": [],
+    "implicitDependencies": ["post"]
 }

@@ -7,6 +7,7 @@
         "api-feature-article": "libs/api/feature-article",
         "api-feature-config": "libs/api/feature-config",
         "api-utils-config": "libs/api/utils-config",
+        "article-data-access-api": "libs/article/data-access-api",
         "post": "apps/post",
         "post-e2e": "apps/post-e2e"
     }
