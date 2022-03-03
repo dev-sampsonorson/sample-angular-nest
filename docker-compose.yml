@@ -8,4 +8,4 @@ services:
       - mongo-data:/data/db
 volumes:
   mongo-data:
-    drivers: local
+    name: mongo-db
