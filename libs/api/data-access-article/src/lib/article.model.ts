@@ -1,4 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { ApiProperty } from '@nestjs/swagger';
 import { Document } from 'mongoose';
 
 /**
@@ -15,8 +16,8 @@ import { Document } from 'mongoose';
     timestamps: true
 })
 export class Article {
-    @Prop() text: string;
-    @Prop() author: string;
+    @Prop() @ApiProperty() text: string;
+    @Prop() @ApiProperty() author: string;
 }
 
 /**
