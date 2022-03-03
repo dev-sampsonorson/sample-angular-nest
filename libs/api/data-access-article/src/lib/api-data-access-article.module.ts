@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
+import { ArticleService } from '..';
 import { ArticleSchema } from './article.model';
 
 @Module({
@@ -9,7 +10,7 @@ import { ArticleSchema } from './article.model';
             { name: 'Article', schema: ArticleSchema }
         ])
     ],
-    providers: [],
-    exports: [],
+    providers: [ArticleService],
+    exports: [ArticleService],
 })
 export class ApiDataAccessArticleModule {}
