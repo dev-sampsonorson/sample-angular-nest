@@ -92,7 +92,7 @@
         "parallel": true,
         "commands": [
           "nx serve api",
-          "nx serve post"
+          "docker compose up"
         ]
       }
     }
