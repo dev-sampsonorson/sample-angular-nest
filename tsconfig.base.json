@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@sample-angular-nest/api/data-access-article": [
+        "libs/api/data-access-article/src/index.ts"
+      ],
+      "@sample-angular-nest/api/feature-article": [
+        "libs/api/feature-article/src/index.ts"
+      ],
       "@sample-angular-nest/api/feature-config": [
         "libs/api/feature-config/src/index.ts"
       ],
