@@ -6,3 +6,10 @@
     alt="Nx - Smart, Fast and Extensible Build System"
   />
 </div>
+
+<ul>
+    <li *ngFor="let article of articles$ | async">
+        Text - {{ article.text }}<br />
+        Author - {{ article.author }}
+    </li>
+</ul>

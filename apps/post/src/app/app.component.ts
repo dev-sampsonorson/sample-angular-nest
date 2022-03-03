@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ArticlesApiService } from '@sample-angular-nest/article/data-access-api';
 
 @Component({
   selector: 'sample-angular-nest-root',
@@ -7,4 +7,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+    articles$ = this._articleApiService.articleControllerGetAllArticles();
+    constructor(
+        private _articleApiService: ArticlesApiService
+    ) { }
 }
