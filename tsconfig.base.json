@@ -1,33 +1,36 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@sample-angular-nest/api/data-access-article": [
-        "libs/api/data-access-article/src/index.ts"
-      ],
-      "@sample-angular-nest/api/feature-article": [
-        "libs/api/feature-article/src/index.ts"
-      ],
-      "@sample-angular-nest/api/feature-config": [
-        "libs/api/feature-config/src/index.ts"
-      ],
-      "@sample-angular-nest/api/utils-config": [
-        "libs/api/utils-config/src/index.ts"
-      ]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@sample-angular-nest/api/data-access-article": [
+                "libs/api/data-access-article/src/index.ts"
+            ],
+            "@sample-angular-nest/api/data-access-dto": [
+                "libs/api/data-access-dto/src/index.ts"
+            ],
+            "@sample-angular-nest/api/feature-article": [
+                "libs/api/feature-article/src/index.ts"
+            ],
+            "@sample-angular-nest/api/feature-config": [
+                "libs/api/feature-config/src/index.ts"
+            ],
+            "@sample-angular-nest/api/utils-config": [
+                "libs/api/utils-config/src/index.ts"
+            ]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

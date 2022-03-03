@@ -1,0 +1,23 @@
+{
+    "root": "libs/api/data-access-dto",
+    "sourceRoot": "libs/api/data-access-dto/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/api/data-access-dto/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/api/data-access-dto"],
+            "options": {
+                "jestConfig": "libs/api/data-access-dto/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    },
+    "tags": []
+}

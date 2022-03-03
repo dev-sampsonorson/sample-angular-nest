@@ -1,12 +1,13 @@
 {
-  "version": 2,
-  "projects": {
-    "api": "apps/api",
-    "api-data-access-article": "libs/api/data-access-article",
-    "api-feature-article": "libs/api/feature-article",
-    "api-feature-config": "libs/api/feature-config",
-    "api-utils-config": "libs/api/utils-config",
-    "post": "apps/post",
-    "post-e2e": "apps/post-e2e"
-  }
+    "version": 2,
+    "projects": {
+        "api": "apps/api",
+        "api-data-access-article": "libs/api/data-access-article",
+        "api-data-access-dto": "libs/api/data-access-dto",
+        "api-feature-article": "libs/api/feature-article",
+        "api-feature-config": "libs/api/feature-config",
+        "api-utils-config": "libs/api/utils-config",
+        "post": "apps/post",
+        "post-e2e": "apps/post-e2e"
+    }
 }
